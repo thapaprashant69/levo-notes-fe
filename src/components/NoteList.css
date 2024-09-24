@@ -1,0 +1,93 @@
+/* Styling the container */
+.note-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Styling the search input */
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styling the note list */
+  .note-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Each note item */
+  .note-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover effect for the note box */
+  .note-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styling the note content */
+  .note-content {
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Action buttons are initially hidden */
+  .note-actions {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Show action buttons on hover */
+  .note-item:hover .note-actions {
+    display: flex;
+  }
+  
+  /* Styling the action buttons */
+  .action-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Button hover effect */
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+
+  .home-buttons {
+    display: flex;
+  }
+
+  .delete-button{
+    background-color: #ff0000;
+  }
+  .delete-button:hover{
+    background-color: #a61629;
+  }
+  
